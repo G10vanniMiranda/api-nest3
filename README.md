@@ -17,3 +17,5 @@ npx nest g resource (entidade) --no-spec
     
 * rodar o projetos
     npm run dev
+
+#### 

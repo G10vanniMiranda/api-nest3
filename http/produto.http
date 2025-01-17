@@ -1,59 +1,33 @@
 ### PRODUTO
-GET http://localhost:3002/produto
+GET http://localhost:8080/produto
 
 ###
-GET http://localhost:3002/produto/1
+GET http://localhost:8080/produto/1
 
 ###
-POST http://localhost:3002/produto
+POST http://localhost:8080/produto
 Content-Type: application/json
 
 {
-    "nome": "Produto 1",
-    "descricao": "Produto 1",
+    "nome": "Notebook Samsung xxxx",
+    "descricao": "Core i9 xxxxMemória",
     "quantidade": 10,
-    "preco": 10.99,
-    "qtd": 5
+    "preco": 10.99
 }
 
 ###
-PATCH http://localhost:3002/produto/1
+
+###
+PUT http://localhost:8080/produto/7
 Content-Type: application/json
 
 {
-    "nome": "Produto 2",
-    "preco": 20.00
+    "nome": "Notebook Dell",
+    "descricao": "Core i9 Memória 32GB"
 }
 
 ###
-DELETE http://localhost:3002/produto/1
-Content-Type: application/json
-
-### Categoria
-GET http://localhost:3002/categoria
-
 
 ###
-GET http://localhost:3002/categoria/1
-
-###
-POST http://localhost:3002/categoria
-Content-Type: application/json
-
-{
-    "nome": "categoria 1",
-    "preco": 10.99,
-    "qtd": 5
-}
-
-###
-PATCH http://localhost:3002/categoria/1
-Content-Type: application/json
-
-{
-    "nome": "categoria 2"
-}
-
-###
-DELETE http://localhost:3002/categoria/1
+DELETE http://localhost:8080/produto/1
 Content-Type: application/json
